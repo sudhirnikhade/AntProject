@@ -26,6 +26,5 @@ public class UserController extends SimpleFormController {
 		userService.add(user);
 		return new ModelAndView("userSuccess","user",user);
 	}
-	}
 	
 }
