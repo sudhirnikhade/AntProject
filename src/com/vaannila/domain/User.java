@@ -1,6 +1,6 @@
 package com.vaannila.domain;
 
-public class User {{
+public class User {
 
 	private String name;
 	private String password;
