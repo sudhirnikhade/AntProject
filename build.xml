@@ -13,7 +13,7 @@
 	</target>
 	
 	<target name="compile" depends="init" >
-		<javac destdir="build/classes" debug="true" srcdir="src">
+		<javac destdir="build/classes" debug="true" srcdir="src/com">
 			<classpath refid="compile.classpath"/>
 		</javac>
 	</target>
@@ -30,5 +30,7 @@
 		<delete dir="dist" />
 		<delete dir="build" />
 	</target>
+
+
 	
 </project>
