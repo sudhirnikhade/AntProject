@@ -1,0 +1,31 @@
+pipeline{
+  agent {
+       label "master"
+       }
+   
+   tools {
+        ant 'ant'
+	jdk 'jdk8'
+	}  
+      
+   stages {
+        stage ('Initialization') {
+	    steps {
+	         bat ...
+		    echo "Hello Initializatio"
+		   ...
+		   }
+	  }
+	stage ('Build') {
+	     steps {
+	          bat 'cd AntTestJavaProject & ant'
+		  }
+
+              post {
+	         success {
+		         echo "Successful"
+		        }
+                   }
+	   }
+	}
+    }
