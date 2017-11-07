@@ -1,9 +1,5 @@
-pipeline{
-  agent {
-       label "master"
-       }
-   
-   tools {
+node{
+    tools {
         ant 'ant'
 	jdk 'jdk8'
 	}  
@@ -11,10 +7,8 @@ pipeline{
    stages {
         stage ('Initialization') {
 	    steps {
-	         bat ...
-		    echo "Hello Initializatio"
-		   ...
-		   }
+	          echo "Hello Initializatio"
+		  }
 	  }
 	stage ('Build') {
 	     steps {
